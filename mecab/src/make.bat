@@ -3,6 +3,6 @@ Set INCLUDE=c:\Program Files\Microsoft Visual Studio 8\VC\include;c:\Program Fil
 Set LIB=c:\Program Files\Microsoft Visual Studio 8\VC\lib;c:\Program Files\Microsoft Platform SDK\Lib;%LIB%
 Set COMSPEC=cmd.exe
 rem nmake -f Makefile.msvc clean
-nmake -f Makefile.msvc
+nmake -f Makefile.msvc.in
 
 

@@ -11,8 +11,8 @@ setup(
 		Extension(
 		    "_MeCab",
 			["MeCab_wrap.cxx",],
-			include_dirs=["C:\Program Files (x86)\MeCab\sdk"],
-			library_dirs=["C:\Program Files (x86)\MeCab\sdk"],
+			include_dirs=["C:\Program Files\MeCab\sdk"],
+			library_dirs=["C:\Program Files\MeCab\sdk"],
 			libraries=["libmecab"]
 		)
 	],

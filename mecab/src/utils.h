@@ -19,7 +19,7 @@
 #endif
 
 #ifdef HAVE_STDINT_H
-#include <stdint.h>
+#include <cstdint.h>
 #else  // HAVE_STDINT_H
 #if defined(_WIN32) && !defined(__CYGWIN__)
 #if defined(_MSC_VER) && (_MSC_VER <= 1500)
@@ -27,7 +27,7 @@ typedef unsigned char uint8_t;
 typedef unsigned long uint32_t;
 typedef unsigned long long uint64_t;
 #else  // _MSC_VER
-#include <stdint.h>
+#include <cstdint.h>
 #endif  // _MSC_VER
 #else   // _WIN32
 typedef unsigned char uint8_t;
