@@ -13,7 +13,6 @@
 #define SWIGPYTHON
 #endif
 
-#define SWIG_PYTHON_NO_BUILD_NONE
 #define SWIG_PYTHON_DIRECTOR_NO_VTABLE
 
 
@@ -3027,19 +3026,6 @@ static swig_module_info swig_module = {swig_types, 8, 0, 0, 0, 0};
 #  error "This python version requires swig to be run with the '-classic' option"
 # endif
 #endif
-#if (PY_VERSION_HEX <= 0x02020000)
-# error "This python version requires swig to be run with the '-nomodern' option"
-#endif
-#if (PY_VERSION_HEX <= 0x02020000)
-# error "This python version requires swig to be run with the '-nomodernargs' option"
-#endif
-#ifndef METH_O
-# error "This python version requires swig to be run with the '-nofastunpack' option"
-#endif
-#ifdef SWIG_TypeQuery
-# undef SWIG_TypeQuery
-#endif
-#define SWIG_TypeQuery SWIG_Python_TypeQuery
 
 /*-----------------------------------------------
               @(target):= _MeCab.so
@@ -3824,12 +3810,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_filename_get(PyObject *SWIGUNUSEDPARM(
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_filename_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_filename_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3847,12 +3832,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_charset_get(PyObject *SWIGUNUSEDPARM(s
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_charset_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_charset_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3870,12 +3854,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_size_get(PyObject *SWIGUNUSEDPARM(self
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_size_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_size_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3893,12 +3876,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_type_get(PyObject *SWIGUNUSEDPARM(self
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_type_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_type_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3916,12 +3898,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_lsize_get(PyObject *SWIGUNUSEDPARM(sel
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_lsize_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_lsize_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3939,12 +3920,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_rsize_get(PyObject *SWIGUNUSEDPARM(sel
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_rsize_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_rsize_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3962,12 +3942,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_version_get(PyObject *SWIGUNUSEDPARM(s
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_version_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_version_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -3985,12 +3964,11 @@ SWIGINTERN PyObject *_wrap_DictionaryInfo_next_get(PyObject *SWIGUNUSEDPARM(self
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_dictionary_info_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:DictionaryInfo_next_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "DictionaryInfo_next_get" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -4007,7 +3985,7 @@ SWIGINTERN PyObject *_wrap_new_DictionaryInfo(PyObject *SWIGUNUSEDPARM(self), Py
   PyObject *resultobj = 0;
   mecab_dictionary_info_t *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"new_DictionaryInfo",0,0,0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)":new_DictionaryInfo")) SWIG_fail;
   {
     try {
       result = (mecab_dictionary_info_t *)new mecab_dictionary_info_t(); 
@@ -4031,11 +4009,10 @@ SWIGINTERN PyObject *_wrap_delete_DictionaryInfo(PyObject *SWIGUNUSEDPARM(self),
   mecab_dictionary_info_t *arg1 = (mecab_dictionary_info_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_dictionary_info_t, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_DictionaryInfo",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_dictionary_info_t, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_DictionaryInfo" "', argument " "1"" of type '" "mecab_dictionary_info_t *""'"); 
   }
@@ -4060,13 +4037,9 @@ fail:
 
 SWIGINTERN PyObject *DictionaryInfo_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
-  if (!SWIG_Python_UnpackTuple(args,(char *)"swigregister", 1, 1,&obj)) return NULL;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_mecab_dictionary_info_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
-}
-
-SWIGINTERN PyObject *DictionaryInfo_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  return SWIG_Python_InitShadowInstance(args);
 }
 
 SWIGINTERN PyObject *_wrap_Path_rnode_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
@@ -4074,12 +4047,11 @@ SWIGINTERN PyObject *_wrap_Path_rnode_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_path_t *arg1 = (mecab_path_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_node_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Path_rnode_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_rnode_get" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
@@ -4097,12 +4069,11 @@ SWIGINTERN PyObject *_wrap_Path_rnext_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_path_t *arg1 = (mecab_path_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_path_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Path_rnext_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_rnext_get" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
@@ -4120,12 +4091,11 @@ SWIGINTERN PyObject *_wrap_Path_lnode_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_path_t *arg1 = (mecab_path_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_node_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Path_lnode_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_lnode_get" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
@@ -4143,12 +4113,11 @@ SWIGINTERN PyObject *_wrap_Path_lnext_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_path_t *arg1 = (mecab_path_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_path_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Path_lnext_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_lnext_get" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
@@ -4166,12 +4135,11 @@ SWIGINTERN PyObject *_wrap_Path_cost_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_path_t *arg1 = (mecab_path_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Path_cost_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_cost_get" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
@@ -4192,15 +4160,16 @@ SWIGINTERN PyObject *_wrap_Path_prob_set(PyObject *SWIGUNUSEDPARM(self), PyObjec
   int res1 = 0 ;
   float val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Path_prob_set",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Path_prob_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_prob_set" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
   arg1 = reinterpret_cast< mecab_path_t * >(argp1);
-  ecode2 = SWIG_AsVal_float(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Path_prob_set" "', argument " "2"" of type '" "float""'");
   } 
@@ -4218,12 +4187,11 @@ SWIGINTERN PyObject *_wrap_Path_prob_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_path_t *arg1 = (mecab_path_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   float result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Path_prob_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_path_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Path_prob_get" "', argument " "1"" of type '" "mecab_path_t *""'"); 
   }
@@ -4238,7 +4206,7 @@ fail:
 
 SWIGINTERN PyObject *Path_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
-  if (!SWIG_Python_UnpackTuple(args,(char *)"swigregister", 1, 1,&obj)) return NULL;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_mecab_path_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
@@ -4248,12 +4216,11 @@ SWIGINTERN PyObject *_wrap_Node_prev_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_node_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_prev_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_prev_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4271,12 +4238,11 @@ SWIGINTERN PyObject *_wrap_Node_next_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_node_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_next_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_next_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4294,12 +4260,11 @@ SWIGINTERN PyObject *_wrap_Node_enext_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_node_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_enext_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_enext_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4317,12 +4282,11 @@ SWIGINTERN PyObject *_wrap_Node_bnext_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_node_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_bnext_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_bnext_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4340,12 +4304,11 @@ SWIGINTERN PyObject *_wrap_Node_rpath_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_path_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_rpath_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_rpath_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4363,12 +4326,11 @@ SWIGINTERN PyObject *_wrap_Node_lpath_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   mecab_path_t *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_lpath_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_lpath_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4386,12 +4348,11 @@ SWIGINTERN PyObject *_wrap_Node_feature_get(PyObject *SWIGUNUSEDPARM(self), PyOb
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_feature_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_feature_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4409,12 +4370,11 @@ SWIGINTERN PyObject *_wrap_Node_id_get(PyObject *SWIGUNUSEDPARM(self), PyObject 
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_id_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_id_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4432,12 +4392,11 @@ SWIGINTERN PyObject *_wrap_Node_length_get(PyObject *SWIGUNUSEDPARM(self), PyObj
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_length_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_length_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4455,12 +4414,11 @@ SWIGINTERN PyObject *_wrap_Node_rlength_get(PyObject *SWIGUNUSEDPARM(self), PyOb
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_rlength_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_rlength_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4478,12 +4436,11 @@ SWIGINTERN PyObject *_wrap_Node_rcAttr_get(PyObject *SWIGUNUSEDPARM(self), PyObj
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_rcAttr_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_rcAttr_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4501,12 +4458,11 @@ SWIGINTERN PyObject *_wrap_Node_lcAttr_get(PyObject *SWIGUNUSEDPARM(self), PyObj
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_lcAttr_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_lcAttr_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4524,12 +4480,11 @@ SWIGINTERN PyObject *_wrap_Node_posid_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_posid_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_posid_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4547,12 +4502,11 @@ SWIGINTERN PyObject *_wrap_Node_char_type_get(PyObject *SWIGUNUSEDPARM(self), Py
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned char result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_char_type_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_char_type_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4570,12 +4524,11 @@ SWIGINTERN PyObject *_wrap_Node_stat_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned char result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_stat_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_stat_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4593,12 +4546,11 @@ SWIGINTERN PyObject *_wrap_Node_isbest_get(PyObject *SWIGUNUSEDPARM(self), PyObj
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   unsigned char result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_isbest_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_isbest_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4616,12 +4568,11 @@ SWIGINTERN PyObject *_wrap_Node_alpha_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   float result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_alpha_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_alpha_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4639,12 +4590,11 @@ SWIGINTERN PyObject *_wrap_Node_beta_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   float result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_beta_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_beta_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4665,15 +4615,16 @@ SWIGINTERN PyObject *_wrap_Node_prob_set(PyObject *SWIGUNUSEDPARM(self), PyObjec
   int res1 = 0 ;
   float val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Node_prob_set",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Node_prob_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_prob_set" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
   arg1 = reinterpret_cast< mecab_node_t * >(argp1);
-  ecode2 = SWIG_AsVal_float(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Node_prob_set" "', argument " "2"" of type '" "float""'");
   } 
@@ -4691,12 +4642,11 @@ SWIGINTERN PyObject *_wrap_Node_prob_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   float result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_prob_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_prob_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4714,12 +4664,11 @@ SWIGINTERN PyObject *_wrap_Node_wcost_get(PyObject *SWIGUNUSEDPARM(self), PyObje
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   short result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_wcost_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_wcost_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4737,12 +4686,11 @@ SWIGINTERN PyObject *_wrap_Node_cost_get(PyObject *SWIGUNUSEDPARM(self), PyObjec
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   long result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_cost_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_cost_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4760,12 +4708,11 @@ SWIGINTERN PyObject *_wrap_Node_surface_get(PyObject *SWIGUNUSEDPARM(self), PyOb
   mecab_node_t *arg1 = (mecab_node_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Node_surface_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Node_surface_get" "', argument " "1"" of type '" "mecab_node_t *""'"); 
   }
@@ -4791,7 +4738,7 @@ fail:
 
 SWIGINTERN PyObject *Node_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
-  if (!SWIG_Python_UnpackTuple(args,(char *)"swigregister", 1, 1,&obj)) return NULL;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_mecab_node_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
@@ -4801,11 +4748,10 @@ SWIGINTERN PyObject *_wrap_Lattice_clear(PyObject *SWIGUNUSEDPARM(self), PyObjec
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_clear",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_clear" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -4833,12 +4779,11 @@ SWIGINTERN PyObject *_wrap_Lattice_is_available(PyObject *SWIGUNUSEDPARM(self), 
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   bool result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_is_available",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_is_available" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -4866,12 +4811,11 @@ SWIGINTERN PyObject *_wrap_Lattice_bos_node(PyObject *SWIGUNUSEDPARM(self), PyOb
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_bos_node",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_bos_node" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -4899,12 +4843,11 @@ SWIGINTERN PyObject *_wrap_Lattice_eos_node(PyObject *SWIGUNUSEDPARM(self), PyOb
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_eos_node",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_eos_node" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -4935,16 +4878,17 @@ SWIGINTERN PyObject *_wrap_Lattice_end_nodes(PyObject *SWIGUNUSEDPARM(self), PyO
   int res1 = 0 ;
   size_t val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_end_nodes",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_end_nodes",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_end_nodes" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_end_nodes" "', argument " "2"" of type '" "size_t""'");
   } 
@@ -4975,16 +4919,17 @@ SWIGINTERN PyObject *_wrap_Lattice_begin_nodes(PyObject *SWIGUNUSEDPARM(self), P
   int res1 = 0 ;
   size_t val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_begin_nodes",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_begin_nodes",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_begin_nodes" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_begin_nodes" "', argument " "2"" of type '" "size_t""'");
   } 
@@ -5012,12 +4957,11 @@ SWIGINTERN PyObject *_wrap_Lattice_sentence(PyObject *SWIGUNUSEDPARM(self), PyOb
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_sentence",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_sentence" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5045,12 +4989,11 @@ SWIGINTERN PyObject *_wrap_Lattice_size(PyObject *SWIGUNUSEDPARM(self), PyObject
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   size_t result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_size",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_size" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5081,15 +5024,16 @@ SWIGINTERN PyObject *_wrap_Lattice_set_Z(PyObject *SWIGUNUSEDPARM(self), PyObjec
   int res1 = 0 ;
   double val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_Z",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_set_Z",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_Z" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_double(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_double(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_set_Z" "', argument " "2"" of type '" "double""'");
   } 
@@ -5117,12 +5061,11 @@ SWIGINTERN PyObject *_wrap_Lattice_Z(PyObject *SWIGUNUSEDPARM(self), PyObject *a
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   double result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_Z",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_Z" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5153,15 +5096,16 @@ SWIGINTERN PyObject *_wrap_Lattice_set_theta(PyObject *SWIGUNUSEDPARM(self), PyO
   int res1 = 0 ;
   float val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_theta",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_set_theta",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_theta" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_float(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_set_theta" "', argument " "2"" of type '" "float""'");
   } 
@@ -5189,12 +5133,11 @@ SWIGINTERN PyObject *_wrap_Lattice_theta(PyObject *SWIGUNUSEDPARM(self), PyObjec
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   float result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_theta",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_theta" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5222,12 +5165,11 @@ SWIGINTERN PyObject *_wrap_Lattice_next(PyObject *SWIGUNUSEDPARM(self), PyObject
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   bool result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_next",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_next" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -5255,12 +5197,11 @@ SWIGINTERN PyObject *_wrap_Lattice_request_type(PyObject *SWIGUNUSEDPARM(self), 
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_request_type",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_request_type" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5291,16 +5232,17 @@ SWIGINTERN PyObject *_wrap_Lattice_has_request_type(PyObject *SWIGUNUSEDPARM(sel
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   bool result;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_has_request_type",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_has_request_type",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_has_request_type" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_has_request_type" "', argument " "2"" of type '" "int""'");
   } 
@@ -5331,15 +5273,16 @@ SWIGINTERN PyObject *_wrap_Lattice_set_request_type(PyObject *SWIGUNUSEDPARM(sel
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_request_type",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_set_request_type",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_request_type" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_set_request_type" "', argument " "2"" of type '" "int""'");
   } 
@@ -5370,15 +5313,16 @@ SWIGINTERN PyObject *_wrap_Lattice_add_request_type(PyObject *SWIGUNUSEDPARM(sel
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_add_request_type",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_add_request_type",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_add_request_type" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_add_request_type" "', argument " "2"" of type '" "int""'");
   } 
@@ -5409,15 +5353,16 @@ SWIGINTERN PyObject *_wrap_Lattice_remove_request_type(PyObject *SWIGUNUSEDPARM(
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_remove_request_type",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_remove_request_type",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_remove_request_type" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_remove_request_type" "', argument " "2"" of type '" "int""'");
   } 
@@ -5445,12 +5390,11 @@ SWIGINTERN PyObject *_wrap_Lattice_newNode(PyObject *SWIGUNUSEDPARM(self), PyObj
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_newNode",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_newNode" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -5473,15 +5417,16 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Lattice_toString__SWIG_0(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Lattice_toString__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_toString",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_toString" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -5504,7 +5449,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Lattice_toString__SWIG_1(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Lattice_toString__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   MeCab::Node *arg2 = (MeCab::Node *) 0 ;
@@ -5512,15 +5457,17 @@ SWIGINTERN PyObject *_wrap_Lattice_toString__SWIG_1(PyObject *SWIGUNUSEDPARM(sel
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   char *result = 0 ;
   
-  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_toString",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_toString" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  res2 = SWIG_ConvertPtr(swig_obj[1], &argp2,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Lattice_toString" "', argument " "2"" of type '" "MeCab::Node const *""'"); 
   }
@@ -5548,14 +5495,35 @@ SWIGINTERN PyObject *_wrap_Lattice_toString(PyObject *self, PyObject *args) {
   PyObject *argv[3] = {
     0
   };
+  Py_ssize_t ii;
   
-  if (!(argc = SWIG_Python_UnpackTuple(args,"Lattice_toString",0,2,argv))) SWIG_fail;
-  --argc;
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
   if (argc == 1) {
-    return _wrap_Lattice_toString__SWIG_0(self, argc, argv);
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_MeCab__Lattice, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_Lattice_toString__SWIG_0(self, args);
+    }
   }
   if (argc == 2) {
-    return _wrap_Lattice_toString__SWIG_1(self, argc, argv);
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_MeCab__Lattice, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_mecab_node_t, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_Lattice_toString__SWIG_1(self, args);
+      }
+    }
   }
   
 fail:
@@ -5575,16 +5543,17 @@ SWIGINTERN PyObject *_wrap_Lattice_enumNBestAsString(PyObject *SWIGUNUSEDPARM(se
   int res1 = 0 ;
   size_t val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   char *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_enumNBestAsString",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_enumNBestAsString",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_enumNBestAsString" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_enumNBestAsString" "', argument " "2"" of type '" "size_t""'");
   } 
@@ -5612,12 +5581,11 @@ SWIGINTERN PyObject *_wrap_Lattice_has_constraint(PyObject *SWIGUNUSEDPARM(self)
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   bool result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_has_constraint",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_has_constraint" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5648,16 +5616,17 @@ SWIGINTERN PyObject *_wrap_Lattice_boundary_constraint(PyObject *SWIGUNUSEDPARM(
   int res1 = 0 ;
   size_t val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   int result;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_boundary_constraint",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_boundary_constraint",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_boundary_constraint" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_boundary_constraint" "', argument " "2"" of type '" "size_t""'");
   } 
@@ -5688,16 +5657,17 @@ SWIGINTERN PyObject *_wrap_Lattice_feature_constraint(PyObject *SWIGUNUSEDPARM(s
   int res1 = 0 ;
   size_t val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   char *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_feature_constraint",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_feature_constraint",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_feature_constraint" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_feature_constraint" "', argument " "2"" of type '" "size_t""'");
   } 
@@ -5731,20 +5701,22 @@ SWIGINTERN PyObject *_wrap_Lattice_set_boundary_constraint(PyObject *SWIGUNUSEDP
   int ecode2 = 0 ;
   int val3 ;
   int ecode3 = 0 ;
-  PyObject *swig_obj[3] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_boundary_constraint",3,3,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:Lattice_set_boundary_constraint",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_boundary_constraint" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_set_boundary_constraint" "', argument " "2"" of type '" "size_t""'");
   } 
   arg2 = static_cast< size_t >(val2);
-  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "Lattice_set_boundary_constraint" "', argument " "3"" of type '" "int""'");
   } 
@@ -5782,25 +5754,28 @@ SWIGINTERN PyObject *_wrap_Lattice_set_feature_constraint(PyObject *SWIGUNUSEDPA
   int res4 ;
   char *buf4 = 0 ;
   int alloc4 = 0 ;
-  PyObject *swig_obj[4] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_feature_constraint",4,4,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:Lattice_set_feature_constraint",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_feature_constraint" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Lattice_set_feature_constraint" "', argument " "2"" of type '" "size_t""'");
   } 
   arg2 = static_cast< size_t >(val2);
-  ecode3 = SWIG_AsVal_size_t(swig_obj[2], &val3);
+  ecode3 = SWIG_AsVal_size_t(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "Lattice_set_feature_constraint" "', argument " "3"" of type '" "size_t""'");
   } 
   arg3 = static_cast< size_t >(val3);
-  res4 = SWIG_AsCharPtrAndSize(swig_obj[3], &buf4, NULL, &alloc4);
+  res4 = SWIG_AsCharPtrAndSize(obj3, &buf4, NULL, &alloc4);
   if (!SWIG_IsOK(res4)) {
     SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "Lattice_set_feature_constraint" "', argument " "4"" of type '" "char const *""'");
   }
@@ -5834,15 +5809,16 @@ SWIGINTERN PyObject *_wrap_Lattice_set_result(PyObject *SWIGUNUSEDPARM(self), Py
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_result",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_set_result",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_result" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Lattice_set_result" "', argument " "2"" of type '" "char const *""'");
   }
@@ -5872,12 +5848,11 @@ SWIGINTERN PyObject *_wrap_Lattice_what(PyObject *SWIGUNUSEDPARM(self), PyObject
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Lattice_what",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_what" "', argument " "1"" of type '" "MeCab::Lattice const *""'"); 
   }
@@ -5909,15 +5884,16 @@ SWIGINTERN PyObject *_wrap_Lattice_set_what(PyObject *SWIGUNUSEDPARM(self), PyOb
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_what",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_set_what",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_what" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Lattice_set_what" "', argument " "2"" of type '" "char const *""'");
   }
@@ -5947,11 +5923,10 @@ SWIGINTERN PyObject *_wrap_delete_Lattice(PyObject *SWIGUNUSEDPARM(self), PyObje
   MeCab::Lattice *arg1 = (MeCab::Lattice *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_Lattice",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_Lattice" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -5978,7 +5953,7 @@ SWIGINTERN PyObject *_wrap_new_Lattice(PyObject *SWIGUNUSEDPARM(self), PyObject 
   PyObject *resultobj = 0;
   MeCab::Lattice *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"new_Lattice",0,0,0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)":new_Lattice")) SWIG_fail;
   {
     try {
       result = (MeCab::Lattice *)new_MeCab_Lattice(); 
@@ -6006,15 +5981,16 @@ SWIGINTERN PyObject *_wrap_Lattice_set_sentence(PyObject *SWIGUNUSEDPARM(self), 
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Lattice_set_sentence",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Lattice_set_sentence",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Lattice_set_sentence" "', argument " "1"" of type '" "MeCab::Lattice *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Lattice * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Lattice_set_sentence" "', argument " "2"" of type '" "char const *""'");
   }
@@ -6041,13 +6017,9 @@ fail:
 
 SWIGINTERN PyObject *Lattice_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
-  if (!SWIG_Python_UnpackTuple(args,(char *)"swigregister", 1, 1,&obj)) return NULL;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_MeCab__Lattice, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
-}
-
-SWIGINTERN PyObject *Lattice_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  return SWIG_Python_InitShadowInstance(args);
 }
 
 SWIGINTERN PyObject *_wrap_Model_dictionary_info(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
@@ -6055,12 +6027,11 @@ SWIGINTERN PyObject *_wrap_Model_dictionary_info(PyObject *SWIGUNUSEDPARM(self),
   MeCab::Model *arg1 = (MeCab::Model *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::DictionaryInfo *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Model_dictionary_info",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Model_dictionary_info" "', argument " "1"" of type '" "MeCab::Model const *""'"); 
   }
@@ -6094,21 +6065,23 @@ SWIGINTERN PyObject *_wrap_Model_transition_cost(PyObject *SWIGUNUSEDPARM(self),
   int ecode2 = 0 ;
   unsigned short val3 ;
   int ecode3 = 0 ;
-  PyObject *swig_obj[3] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
   int result;
   
-  if (!SWIG_Python_UnpackTuple(args,"Model_transition_cost",3,3,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:Model_transition_cost",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Model_transition_cost" "', argument " "1"" of type '" "MeCab::Model const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Model * >(argp1);
-  ecode2 = SWIG_AsVal_unsigned_SS_short(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_unsigned_SS_short(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Model_transition_cost" "', argument " "2"" of type '" "unsigned short""'");
   } 
   arg2 = static_cast< unsigned short >(val2);
-  ecode3 = SWIG_AsVal_unsigned_SS_short(swig_obj[2], &val3);
+  ecode3 = SWIG_AsVal_unsigned_SS_short(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "Model_transition_cost" "', argument " "3"" of type '" "unsigned short""'");
   } 
@@ -6147,26 +6120,29 @@ SWIGINTERN PyObject *_wrap_Model_lookup(PyObject *SWIGUNUSEDPARM(self), PyObject
   int alloc3 = 0 ;
   void *argp4 = 0 ;
   int res4 = 0 ;
-  PyObject *swig_obj[4] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Model_lookup",4,4,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:Model_lookup",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Model_lookup" "', argument " "1"" of type '" "MeCab::Model const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Model * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Model_lookup" "', argument " "2"" of type '" "char const *""'");
   }
   arg2 = reinterpret_cast< char * >(buf2);
-  res3 = SWIG_AsCharPtrAndSize(swig_obj[2], &buf3, NULL, &alloc3);
+  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
   if (!SWIG_IsOK(res3)) {
     SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "Model_lookup" "', argument " "3"" of type '" "char const *""'");
   }
   arg3 = reinterpret_cast< char * >(buf3);
-  res4 = SWIG_ConvertPtr(swig_obj[3], &argp4,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res4)) {
     SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "Model_lookup" "', argument " "4"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -6198,12 +6174,11 @@ SWIGINTERN PyObject *_wrap_Model_createTagger(PyObject *SWIGUNUSEDPARM(self), Py
   MeCab::Model *arg1 = (MeCab::Model *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::Tagger *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Model_createTagger",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Model_createTagger" "', argument " "1"" of type '" "MeCab::Model const *""'"); 
   }
@@ -6231,12 +6206,11 @@ SWIGINTERN PyObject *_wrap_Model_createLattice(PyObject *SWIGUNUSEDPARM(self), P
   MeCab::Model *arg1 = (MeCab::Model *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::Lattice *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Model_createLattice",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Model_createLattice" "', argument " "1"" of type '" "MeCab::Model const *""'"); 
   }
@@ -6267,16 +6241,17 @@ SWIGINTERN PyObject *_wrap_Model_swap(PyObject *SWIGUNUSEDPARM(self), PyObject *
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   bool result;
   
-  if (!SWIG_Python_UnpackTuple(args,"Model_swap",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Model_swap",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Model_swap" "', argument " "1"" of type '" "MeCab::Model *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Model * >(argp1);
-  res2 = SWIG_ConvertPtr(swig_obj[1], &argp2,SWIGTYPE_p_MeCab__Model, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_MeCab__Model, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Model_swap" "', argument " "2"" of type '" "MeCab::Model *""'"); 
   }
@@ -6303,7 +6278,7 @@ SWIGINTERN PyObject *_wrap_Model_version(PyObject *SWIGUNUSEDPARM(self), PyObjec
   PyObject *resultobj = 0;
   char *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Model_version",0,0,0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)":Model_version")) SWIG_fail;
   {
     try {
       result = (char *)MeCab::Model::version(); 
@@ -6327,11 +6302,10 @@ SWIGINTERN PyObject *_wrap_delete_Model(PyObject *SWIGUNUSEDPARM(self), PyObject
   MeCab::Model *arg1 = (MeCab::Model *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Model, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_Model",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Model, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_Model" "', argument " "1"" of type '" "MeCab::Model *""'"); 
   }
@@ -6354,16 +6328,17 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_Model__SWIG_0(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_new_Model__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   char *arg1 = (char *) 0 ;
   int res1 ;
   char *buf1 = 0 ;
   int alloc1 = 0 ;
+  PyObject * obj0 = 0 ;
   MeCab::Model *result = 0 ;
   
-  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
-  res1 = SWIG_AsCharPtrAndSize(swig_obj[0], &buf1, NULL, &alloc1);
+  if (!PyArg_ParseTuple(args,(char *)"O:new_Model",&obj0)) SWIG_fail;
+  res1 = SWIG_AsCharPtrAndSize(obj0, &buf1, NULL, &alloc1);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_Model" "', argument " "1"" of type '" "char const *""'");
   }
@@ -6388,11 +6363,11 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_Model__SWIG_1(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **SWIGUNUSEDPARM(swig_obj)) {
+SWIGINTERN PyObject *_wrap_new_Model__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Model *result = 0 ;
   
-  if ((nobjs < 0) || (nobjs > 0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)":new_Model")) SWIG_fail;
   {
     try {
       result = (MeCab::Model *)new_MeCab_Model(); 
@@ -6416,14 +6391,23 @@ SWIGINTERN PyObject *_wrap_new_Model(PyObject *self, PyObject *args) {
   PyObject *argv[2] = {
     0
   };
+  Py_ssize_t ii;
   
-  if (!(argc = SWIG_Python_UnpackTuple(args,"new_Model",0,1,argv))) SWIG_fail;
-  --argc;
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
   if (argc == 0) {
-    return _wrap_new_Model__SWIG_1(self, argc, argv);
+    return _wrap_new_Model__SWIG_1(self, args);
   }
   if (argc == 1) {
-    return _wrap_new_Model__SWIG_0(self, argc, argv);
+    int _v;
+    int res = SWIG_AsCharPtrAndSize(argv[0], 0, NULL, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_Model__SWIG_0(self, args);
+    }
   }
   
 fail:
@@ -6437,16 +6421,12 @@ fail:
 
 SWIGINTERN PyObject *Model_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
-  if (!SWIG_Python_UnpackTuple(args,(char *)"swigregister", 1, 1,&obj)) return NULL;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_MeCab__Model, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *Model_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  return SWIG_Python_InitShadowInstance(args);
-}
-
-SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_0(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Model *arg1 = 0 ;
   MeCab::Lattice *arg2 = (MeCab::Lattice *) 0 ;
@@ -6454,10 +6434,12 @@ SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_0(PyObject *SWIGUNUSEDPARM(self), 
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   bool result;
   
-  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1, SWIGTYPE_p_MeCab__Model,  0  | 0);
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_parse",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_MeCab__Model,  0  | 0);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parse" "', argument " "1"" of type '" "MeCab::Model const &""'"); 
   }
@@ -6465,7 +6447,7 @@ SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_0(PyObject *SWIGUNUSEDPARM(self), 
     SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "Tagger_parse" "', argument " "1"" of type '" "MeCab::Model const &""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Model * >(argp1);
-  res2 = SWIG_ConvertPtr(swig_obj[1], &argp2,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parse" "', argument " "2"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -6488,7 +6470,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_1(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   MeCab::Lattice *arg2 = (MeCab::Lattice *) 0 ;
@@ -6496,15 +6478,17 @@ SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_1(PyObject *SWIGUNUSEDPARM(self), 
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   bool result;
   
-  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_parse",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parse" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_ConvertPtr(swig_obj[1], &argp2,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_MeCab__Lattice, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parse" "', argument " "2"" of type '" "MeCab::Lattice *""'"); 
   }
@@ -6527,7 +6511,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_2(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -6536,15 +6520,17 @@ SWIGINTERN PyObject *_wrap_Tagger_parse__SWIG_2(PyObject *SWIGUNUSEDPARM(self), 
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   char *result = 0 ;
   
-  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_parse",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parse" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parse" "', argument " "2"" of type '" "char const *""'");
   }
@@ -6574,40 +6560,52 @@ SWIGINTERN PyObject *_wrap_Tagger_parse(PyObject *self, PyObject *args) {
   PyObject *argv[3] = {
     0
   };
+  Py_ssize_t ii;
   
-  if (!(argc = SWIG_Python_UnpackTuple(args,"Tagger_parse",0,2,argv))) SWIG_fail;
-  --argc;
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
   if (argc == 2) {
-    int _v = 0;
-    {
-      int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_MeCab__Model, 0);
-      _v = SWIG_CheckState(res);
-    }
-    if (!_v) goto check_1;
-    {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_MeCab__Model, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
       void *vptr = 0;
       int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_MeCab__Lattice, 0);
       _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_Tagger_parse__SWIG_0(self, args);
+      }
     }
-    if (!_v) goto check_1;
-    return _wrap_Tagger_parse__SWIG_0(self, argc, argv);
   }
-check_1:
-  
   if (argc == 2) {
-    int _v = 0;
-    {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_MeCab__Tagger, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
       void *vptr = 0;
       int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_MeCab__Lattice, 0);
       _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_Tagger_parse__SWIG_1(self, args);
+      }
     }
-    if (!_v) goto check_2;
-    return _wrap_Tagger_parse__SWIG_1(self, argc, argv);
   }
-check_2:
-  
   if (argc == 2) {
-    return _wrap_Tagger_parse__SWIG_2(self, argc, argv);
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_MeCab__Tagger, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_Tagger_parse__SWIG_2(self, args);
+      }
+    }
   }
   
 fail:
@@ -6629,16 +6627,17 @@ SWIGINTERN PyObject *_wrap_Tagger_parseToNode(PyObject *SWIGUNUSEDPARM(self), Py
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_parseToNode",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_parseToNode",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parseToNode" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parseToNode" "', argument " "2"" of type '" "char const *""'");
   }
@@ -6675,21 +6674,23 @@ SWIGINTERN PyObject *_wrap_Tagger_parseNBest(PyObject *SWIGUNUSEDPARM(self), PyO
   int res3 ;
   char *buf3 = 0 ;
   int alloc3 = 0 ;
-  PyObject *swig_obj[3] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
   char *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_parseNBest",3,3,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:Tagger_parseNBest",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parseNBest" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tagger_parseNBest" "', argument " "2"" of type '" "size_t""'");
   } 
   arg2 = static_cast< size_t >(val2);
-  res3 = SWIG_AsCharPtrAndSize(swig_obj[2], &buf3, NULL, &alloc3);
+  res3 = SWIG_AsCharPtrAndSize(obj2, &buf3, NULL, &alloc3);
   if (!SWIG_IsOK(res3)) {
     SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "Tagger_parseNBest" "', argument " "3"" of type '" "char const *""'");
   }
@@ -6723,16 +6724,17 @@ SWIGINTERN PyObject *_wrap_Tagger_parseNBestInit(PyObject *SWIGUNUSEDPARM(self),
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   bool result;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_parseNBestInit",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_parseNBestInit",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parseNBestInit" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parseNBestInit" "', argument " "2"" of type '" "char const *""'");
   }
@@ -6762,12 +6764,11 @@ SWIGINTERN PyObject *_wrap_Tagger_nextNode(PyObject *SWIGUNUSEDPARM(self), PyObj
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::Node *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_nextNode",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_nextNode" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
@@ -6795,12 +6796,11 @@ SWIGINTERN PyObject *_wrap_Tagger_next(PyObject *SWIGUNUSEDPARM(self), PyObject 
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_next",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_next" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
@@ -6831,16 +6831,17 @@ SWIGINTERN PyObject *_wrap_Tagger_formatNode(PyObject *SWIGUNUSEDPARM(self), PyO
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   char *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_formatNode",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_formatNode",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_formatNode" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_ConvertPtr(swig_obj[1], &argp2,SWIGTYPE_p_mecab_node_t, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_mecab_node_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_formatNode" "', argument " "2"" of type '" "MeCab::Node const *""'"); 
   }
@@ -6871,15 +6872,16 @@ SWIGINTERN PyObject *_wrap_Tagger_set_request_type(PyObject *SWIGUNUSEDPARM(self
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_set_request_type",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_set_request_type",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_set_request_type" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tagger_set_request_type" "', argument " "2"" of type '" "int""'");
   } 
@@ -6907,12 +6909,11 @@ SWIGINTERN PyObject *_wrap_Tagger_request_type(PyObject *SWIGUNUSEDPARM(self), P
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_request_type",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_request_type" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -6940,12 +6941,11 @@ SWIGINTERN PyObject *_wrap_Tagger_partial(PyObject *SWIGUNUSEDPARM(self), PyObje
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   bool result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_partial",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_partial" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -6976,15 +6976,16 @@ SWIGINTERN PyObject *_wrap_Tagger_set_partial(PyObject *SWIGUNUSEDPARM(self), Py
   int res1 = 0 ;
   bool val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_set_partial",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_set_partial",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_set_partial" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  ecode2 = SWIG_AsVal_bool(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tagger_set_partial" "', argument " "2"" of type '" "bool""'");
   } 
@@ -7012,12 +7013,11 @@ SWIGINTERN PyObject *_wrap_Tagger_lattice_level(PyObject *SWIGUNUSEDPARM(self), 
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   int result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_lattice_level",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_lattice_level" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -7048,15 +7048,16 @@ SWIGINTERN PyObject *_wrap_Tagger_set_lattice_level(PyObject *SWIGUNUSEDPARM(sel
   int res1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_set_lattice_level",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_set_lattice_level",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_set_lattice_level" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tagger_set_lattice_level" "', argument " "2"" of type '" "int""'");
   } 
@@ -7084,12 +7085,11 @@ SWIGINTERN PyObject *_wrap_Tagger_all_morphs(PyObject *SWIGUNUSEDPARM(self), PyO
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   bool result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_all_morphs",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_all_morphs" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -7120,15 +7120,16 @@ SWIGINTERN PyObject *_wrap_Tagger_set_all_morphs(PyObject *SWIGUNUSEDPARM(self),
   int res1 = 0 ;
   bool val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_set_all_morphs",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_set_all_morphs",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_set_all_morphs" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  ecode2 = SWIG_AsVal_bool(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_bool(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tagger_set_all_morphs" "', argument " "2"" of type '" "bool""'");
   } 
@@ -7159,15 +7160,16 @@ SWIGINTERN PyObject *_wrap_Tagger_set_theta(PyObject *SWIGUNUSEDPARM(self), PyOb
   int res1 = 0 ;
   float val2 ;
   int ecode2 = 0 ;
-  PyObject *swig_obj[2] ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_set_theta",2,2,swig_obj)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_set_theta",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_set_theta" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  ecode2 = SWIG_AsVal_float(swig_obj[1], &val2);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Tagger_set_theta" "', argument " "2"" of type '" "float""'");
   } 
@@ -7195,12 +7197,11 @@ SWIGINTERN PyObject *_wrap_Tagger_theta(PyObject *SWIGUNUSEDPARM(self), PyObject
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   float result;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_theta",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_theta" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -7228,12 +7229,11 @@ SWIGINTERN PyObject *_wrap_Tagger_dictionary_info(PyObject *SWIGUNUSEDPARM(self)
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   MeCab::DictionaryInfo *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_dictionary_info",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_dictionary_info" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -7261,12 +7261,11 @@ SWIGINTERN PyObject *_wrap_Tagger_what(PyObject *SWIGUNUSEDPARM(self), PyObject 
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   char *result = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:Tagger_what",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_what" "', argument " "1"" of type '" "MeCab::Tagger const *""'"); 
   }
@@ -7294,11 +7293,10 @@ SWIGINTERN PyObject *_wrap_delete_Tagger(PyObject *SWIGUNUSEDPARM(self), PyObjec
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  PyObject *swig_obj[1] ;
+  PyObject * obj0 = 0 ;
   
-  if (!args) SWIG_fail;
-  swig_obj[0] = args;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_Tagger",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_Tagger" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
@@ -7325,7 +7323,7 @@ SWIGINTERN PyObject *_wrap_Tagger_version(PyObject *SWIGUNUSEDPARM(self), PyObje
   PyObject *resultobj = 0;
   char *result = 0 ;
   
-  if (!SWIG_Python_UnpackTuple(args,"Tagger_version",0,0,0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)":Tagger_version")) SWIG_fail;
   {
     try {
       result = (char *)MeCab::Tagger::version(); 
@@ -7344,16 +7342,17 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_Tagger__SWIG_0(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_new_Tagger__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   char *arg1 = (char *) 0 ;
   int res1 ;
   char *buf1 = 0 ;
   int alloc1 = 0 ;
+  PyObject * obj0 = 0 ;
   MeCab::Tagger *result = 0 ;
   
-  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
-  res1 = SWIG_AsCharPtrAndSize(swig_obj[0], &buf1, NULL, &alloc1);
+  if (!PyArg_ParseTuple(args,(char *)"O:new_Tagger",&obj0)) SWIG_fail;
+  res1 = SWIG_AsCharPtrAndSize(obj0, &buf1, NULL, &alloc1);
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_Tagger" "', argument " "1"" of type '" "char const *""'");
   }
@@ -7378,11 +7377,11 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_Tagger__SWIG_1(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **SWIGUNUSEDPARM(swig_obj)) {
+SWIGINTERN PyObject *_wrap_new_Tagger__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Tagger *result = 0 ;
   
-  if ((nobjs < 0) || (nobjs > 0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)":new_Tagger")) SWIG_fail;
   {
     try {
       result = (MeCab::Tagger *)new_MeCab_Tagger(); 
@@ -7406,14 +7405,23 @@ SWIGINTERN PyObject *_wrap_new_Tagger(PyObject *self, PyObject *args) {
   PyObject *argv[2] = {
     0
   };
+  Py_ssize_t ii;
   
-  if (!(argc = SWIG_Python_UnpackTuple(args,"new_Tagger",0,1,argv))) SWIG_fail;
-  --argc;
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
   if (argc == 0) {
-    return _wrap_new_Tagger__SWIG_1(self, argc, argv);
+    return _wrap_new_Tagger__SWIG_1(self, args);
   }
   if (argc == 1) {
-    return _wrap_new_Tagger__SWIG_0(self, argc, argv);
+    int _v;
+    int res = SWIG_AsCharPtrAndSize(argv[0], 0, NULL, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_Tagger__SWIG_0(self, args);
+    }
   }
   
 fail:
@@ -7425,7 +7433,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Tagger_parseToString__SWIG_0(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Tagger_parseToString__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -7437,20 +7445,23 @@ SWIGINTERN PyObject *_wrap_Tagger_parseToString__SWIG_0(PyObject *SWIGUNUSEDPARM
   int alloc2 = 0 ;
   size_t val3 ;
   int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
   char *result = 0 ;
   
-  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:Tagger_parseToString",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parseToString" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parseToString" "', argument " "2"" of type '" "char const *""'");
   }
   arg2 = reinterpret_cast< char * >(buf2);
-  ecode3 = SWIG_AsVal_size_t(swig_obj[2], &val3);
+  ecode3 = SWIG_AsVal_size_t(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "Tagger_parseToString" "', argument " "3"" of type '" "size_t""'");
   } 
@@ -7475,7 +7486,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_Tagger_parseToString__SWIG_1(PyObject *SWIGUNUSEDPARM(self), int nobjs, PyObject **swig_obj) {
+SWIGINTERN PyObject *_wrap_Tagger_parseToString__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   MeCab::Tagger *arg1 = (MeCab::Tagger *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -7484,15 +7495,17 @@ SWIGINTERN PyObject *_wrap_Tagger_parseToString__SWIG_1(PyObject *SWIGUNUSEDPARM
   int res2 ;
   char *buf2 = 0 ;
   int alloc2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   char *result = 0 ;
   
-  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OO:Tagger_parseToString",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_MeCab__Tagger, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Tagger_parseToString" "', argument " "1"" of type '" "MeCab::Tagger *""'"); 
   }
   arg1 = reinterpret_cast< MeCab::Tagger * >(argp1);
-  res2 = SWIG_AsCharPtrAndSize(swig_obj[1], &buf2, NULL, &alloc2);
+  res2 = SWIG_AsCharPtrAndSize(obj1, &buf2, NULL, &alloc2);
   if (!SWIG_IsOK(res2)) {
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Tagger_parseToString" "', argument " "2"" of type '" "char const *""'");
   }
@@ -7522,14 +7535,44 @@ SWIGINTERN PyObject *_wrap_Tagger_parseToString(PyObject *self, PyObject *args) 
   PyObject *argv[4] = {
     0
   };
+  Py_ssize_t ii;
   
-  if (!(argc = SWIG_Python_UnpackTuple(args,"Tagger_parseToString",0,3,argv))) SWIG_fail;
-  --argc;
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
   if (argc == 2) {
-    return _wrap_Tagger_parseToString__SWIG_1(self, argc, argv);
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_MeCab__Tagger, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_Tagger_parseToString__SWIG_1(self, args);
+      }
+    }
   }
   if (argc == 3) {
-    return _wrap_Tagger_parseToString__SWIG_0(self, argc, argv);
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_MeCab__Tagger, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsCharPtrAndSize(argv[1], 0, NULL, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        {
+          int res = SWIG_AsVal_size_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_Tagger_parseToString__SWIG_0(self, args);
+        }
+      }
+    }
   }
   
 fail:
@@ -7543,131 +7586,123 @@ fail:
 
 SWIGINTERN PyObject *Tagger_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
-  if (!SWIG_Python_UnpackTuple(args,(char *)"swigregister", 1, 1,&obj)) return NULL;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_MeCab__Tagger, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *Tagger_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  return SWIG_Python_InitShadowInstance(args);
-}
-
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
-	 { (char *)"DictionaryInfo_filename_get", (PyCFunction)_wrap_DictionaryInfo_filename_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_charset_get", (PyCFunction)_wrap_DictionaryInfo_charset_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_size_get", (PyCFunction)_wrap_DictionaryInfo_size_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_type_get", (PyCFunction)_wrap_DictionaryInfo_type_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_lsize_get", (PyCFunction)_wrap_DictionaryInfo_lsize_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_rsize_get", (PyCFunction)_wrap_DictionaryInfo_rsize_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_version_get", (PyCFunction)_wrap_DictionaryInfo_version_get, METH_O, NULL},
-	 { (char *)"DictionaryInfo_next_get", (PyCFunction)_wrap_DictionaryInfo_next_get, METH_O, NULL},
-	 { (char *)"new_DictionaryInfo", (PyCFunction)_wrap_new_DictionaryInfo, METH_NOARGS, NULL},
-	 { (char *)"delete_DictionaryInfo", (PyCFunction)_wrap_delete_DictionaryInfo, METH_O, NULL},
+	 { (char *)"DictionaryInfo_filename_get", _wrap_DictionaryInfo_filename_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_charset_get", _wrap_DictionaryInfo_charset_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_size_get", _wrap_DictionaryInfo_size_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_type_get", _wrap_DictionaryInfo_type_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_lsize_get", _wrap_DictionaryInfo_lsize_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_rsize_get", _wrap_DictionaryInfo_rsize_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_version_get", _wrap_DictionaryInfo_version_get, METH_VARARGS, NULL},
+	 { (char *)"DictionaryInfo_next_get", _wrap_DictionaryInfo_next_get, METH_VARARGS, NULL},
+	 { (char *)"new_DictionaryInfo", _wrap_new_DictionaryInfo, METH_VARARGS, NULL},
+	 { (char *)"delete_DictionaryInfo", _wrap_delete_DictionaryInfo, METH_VARARGS, NULL},
 	 { (char *)"DictionaryInfo_swigregister", DictionaryInfo_swigregister, METH_VARARGS, NULL},
-	 { (char *)"DictionaryInfo_swiginit", DictionaryInfo_swiginit, METH_VARARGS, NULL},
-	 { (char *)"Path_rnode_get", (PyCFunction)_wrap_Path_rnode_get, METH_O, NULL},
-	 { (char *)"Path_rnext_get", (PyCFunction)_wrap_Path_rnext_get, METH_O, NULL},
-	 { (char *)"Path_lnode_get", (PyCFunction)_wrap_Path_lnode_get, METH_O, NULL},
-	 { (char *)"Path_lnext_get", (PyCFunction)_wrap_Path_lnext_get, METH_O, NULL},
-	 { (char *)"Path_cost_get", (PyCFunction)_wrap_Path_cost_get, METH_O, NULL},
+	 { (char *)"Path_rnode_get", _wrap_Path_rnode_get, METH_VARARGS, NULL},
+	 { (char *)"Path_rnext_get", _wrap_Path_rnext_get, METH_VARARGS, NULL},
+	 { (char *)"Path_lnode_get", _wrap_Path_lnode_get, METH_VARARGS, NULL},
+	 { (char *)"Path_lnext_get", _wrap_Path_lnext_get, METH_VARARGS, NULL},
+	 { (char *)"Path_cost_get", _wrap_Path_cost_get, METH_VARARGS, NULL},
 	 { (char *)"Path_prob_set", _wrap_Path_prob_set, METH_VARARGS, NULL},
-	 { (char *)"Path_prob_get", (PyCFunction)_wrap_Path_prob_get, METH_O, NULL},
+	 { (char *)"Path_prob_get", _wrap_Path_prob_get, METH_VARARGS, NULL},
 	 { (char *)"Path_swigregister", Path_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Node_prev_get", (PyCFunction)_wrap_Node_prev_get, METH_O, NULL},
-	 { (char *)"Node_next_get", (PyCFunction)_wrap_Node_next_get, METH_O, NULL},
-	 { (char *)"Node_enext_get", (PyCFunction)_wrap_Node_enext_get, METH_O, NULL},
-	 { (char *)"Node_bnext_get", (PyCFunction)_wrap_Node_bnext_get, METH_O, NULL},
-	 { (char *)"Node_rpath_get", (PyCFunction)_wrap_Node_rpath_get, METH_O, NULL},
-	 { (char *)"Node_lpath_get", (PyCFunction)_wrap_Node_lpath_get, METH_O, NULL},
-	 { (char *)"Node_feature_get", (PyCFunction)_wrap_Node_feature_get, METH_O, NULL},
-	 { (char *)"Node_id_get", (PyCFunction)_wrap_Node_id_get, METH_O, NULL},
-	 { (char *)"Node_length_get", (PyCFunction)_wrap_Node_length_get, METH_O, NULL},
-	 { (char *)"Node_rlength_get", (PyCFunction)_wrap_Node_rlength_get, METH_O, NULL},
-	 { (char *)"Node_rcAttr_get", (PyCFunction)_wrap_Node_rcAttr_get, METH_O, NULL},
-	 { (char *)"Node_lcAttr_get", (PyCFunction)_wrap_Node_lcAttr_get, METH_O, NULL},
-	 { (char *)"Node_posid_get", (PyCFunction)_wrap_Node_posid_get, METH_O, NULL},
-	 { (char *)"Node_char_type_get", (PyCFunction)_wrap_Node_char_type_get, METH_O, NULL},
-	 { (char *)"Node_stat_get", (PyCFunction)_wrap_Node_stat_get, METH_O, NULL},
-	 { (char *)"Node_isbest_get", (PyCFunction)_wrap_Node_isbest_get, METH_O, NULL},
-	 { (char *)"Node_alpha_get", (PyCFunction)_wrap_Node_alpha_get, METH_O, NULL},
-	 { (char *)"Node_beta_get", (PyCFunction)_wrap_Node_beta_get, METH_O, NULL},
+	 { (char *)"Node_prev_get", _wrap_Node_prev_get, METH_VARARGS, NULL},
+	 { (char *)"Node_next_get", _wrap_Node_next_get, METH_VARARGS, NULL},
+	 { (char *)"Node_enext_get", _wrap_Node_enext_get, METH_VARARGS, NULL},
+	 { (char *)"Node_bnext_get", _wrap_Node_bnext_get, METH_VARARGS, NULL},
+	 { (char *)"Node_rpath_get", _wrap_Node_rpath_get, METH_VARARGS, NULL},
+	 { (char *)"Node_lpath_get", _wrap_Node_lpath_get, METH_VARARGS, NULL},
+	 { (char *)"Node_feature_get", _wrap_Node_feature_get, METH_VARARGS, NULL},
+	 { (char *)"Node_id_get", _wrap_Node_id_get, METH_VARARGS, NULL},
+	 { (char *)"Node_length_get", _wrap_Node_length_get, METH_VARARGS, NULL},
+	 { (char *)"Node_rlength_get", _wrap_Node_rlength_get, METH_VARARGS, NULL},
+	 { (char *)"Node_rcAttr_get", _wrap_Node_rcAttr_get, METH_VARARGS, NULL},
+	 { (char *)"Node_lcAttr_get", _wrap_Node_lcAttr_get, METH_VARARGS, NULL},
+	 { (char *)"Node_posid_get", _wrap_Node_posid_get, METH_VARARGS, NULL},
+	 { (char *)"Node_char_type_get", _wrap_Node_char_type_get, METH_VARARGS, NULL},
+	 { (char *)"Node_stat_get", _wrap_Node_stat_get, METH_VARARGS, NULL},
+	 { (char *)"Node_isbest_get", _wrap_Node_isbest_get, METH_VARARGS, NULL},
+	 { (char *)"Node_alpha_get", _wrap_Node_alpha_get, METH_VARARGS, NULL},
+	 { (char *)"Node_beta_get", _wrap_Node_beta_get, METH_VARARGS, NULL},
 	 { (char *)"Node_prob_set", _wrap_Node_prob_set, METH_VARARGS, NULL},
-	 { (char *)"Node_prob_get", (PyCFunction)_wrap_Node_prob_get, METH_O, NULL},
-	 { (char *)"Node_wcost_get", (PyCFunction)_wrap_Node_wcost_get, METH_O, NULL},
-	 { (char *)"Node_cost_get", (PyCFunction)_wrap_Node_cost_get, METH_O, NULL},
-	 { (char *)"Node_surface_get", (PyCFunction)_wrap_Node_surface_get, METH_O, NULL},
+	 { (char *)"Node_prob_get", _wrap_Node_prob_get, METH_VARARGS, NULL},
+	 { (char *)"Node_wcost_get", _wrap_Node_wcost_get, METH_VARARGS, NULL},
+	 { (char *)"Node_cost_get", _wrap_Node_cost_get, METH_VARARGS, NULL},
+	 { (char *)"Node_surface_get", _wrap_Node_surface_get, METH_VARARGS, NULL},
 	 { (char *)"Node_swigregister", Node_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Lattice_clear", (PyCFunction)_wrap_Lattice_clear, METH_O, NULL},
-	 { (char *)"Lattice_is_available", (PyCFunction)_wrap_Lattice_is_available, METH_O, NULL},
-	 { (char *)"Lattice_bos_node", (PyCFunction)_wrap_Lattice_bos_node, METH_O, NULL},
-	 { (char *)"Lattice_eos_node", (PyCFunction)_wrap_Lattice_eos_node, METH_O, NULL},
+	 { (char *)"Lattice_clear", _wrap_Lattice_clear, METH_VARARGS, NULL},
+	 { (char *)"Lattice_is_available", _wrap_Lattice_is_available, METH_VARARGS, NULL},
+	 { (char *)"Lattice_bos_node", _wrap_Lattice_bos_node, METH_VARARGS, NULL},
+	 { (char *)"Lattice_eos_node", _wrap_Lattice_eos_node, METH_VARARGS, NULL},
 	 { (char *)"Lattice_end_nodes", _wrap_Lattice_end_nodes, METH_VARARGS, NULL},
 	 { (char *)"Lattice_begin_nodes", _wrap_Lattice_begin_nodes, METH_VARARGS, NULL},
-	 { (char *)"Lattice_sentence", (PyCFunction)_wrap_Lattice_sentence, METH_O, NULL},
-	 { (char *)"Lattice_size", (PyCFunction)_wrap_Lattice_size, METH_O, NULL},
+	 { (char *)"Lattice_sentence", _wrap_Lattice_sentence, METH_VARARGS, NULL},
+	 { (char *)"Lattice_size", _wrap_Lattice_size, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_Z", _wrap_Lattice_set_Z, METH_VARARGS, NULL},
-	 { (char *)"Lattice_Z", (PyCFunction)_wrap_Lattice_Z, METH_O, NULL},
+	 { (char *)"Lattice_Z", _wrap_Lattice_Z, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_theta", _wrap_Lattice_set_theta, METH_VARARGS, NULL},
-	 { (char *)"Lattice_theta", (PyCFunction)_wrap_Lattice_theta, METH_O, NULL},
-	 { (char *)"Lattice_next", (PyCFunction)_wrap_Lattice_next, METH_O, NULL},
-	 { (char *)"Lattice_request_type", (PyCFunction)_wrap_Lattice_request_type, METH_O, NULL},
+	 { (char *)"Lattice_theta", _wrap_Lattice_theta, METH_VARARGS, NULL},
+	 { (char *)"Lattice_next", _wrap_Lattice_next, METH_VARARGS, NULL},
+	 { (char *)"Lattice_request_type", _wrap_Lattice_request_type, METH_VARARGS, NULL},
 	 { (char *)"Lattice_has_request_type", _wrap_Lattice_has_request_type, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_request_type", _wrap_Lattice_set_request_type, METH_VARARGS, NULL},
 	 { (char *)"Lattice_add_request_type", _wrap_Lattice_add_request_type, METH_VARARGS, NULL},
 	 { (char *)"Lattice_remove_request_type", _wrap_Lattice_remove_request_type, METH_VARARGS, NULL},
-	 { (char *)"Lattice_newNode", (PyCFunction)_wrap_Lattice_newNode, METH_O, NULL},
+	 { (char *)"Lattice_newNode", _wrap_Lattice_newNode, METH_VARARGS, NULL},
 	 { (char *)"Lattice_toString", _wrap_Lattice_toString, METH_VARARGS, NULL},
 	 { (char *)"Lattice_enumNBestAsString", _wrap_Lattice_enumNBestAsString, METH_VARARGS, NULL},
-	 { (char *)"Lattice_has_constraint", (PyCFunction)_wrap_Lattice_has_constraint, METH_O, NULL},
+	 { (char *)"Lattice_has_constraint", _wrap_Lattice_has_constraint, METH_VARARGS, NULL},
 	 { (char *)"Lattice_boundary_constraint", _wrap_Lattice_boundary_constraint, METH_VARARGS, NULL},
 	 { (char *)"Lattice_feature_constraint", _wrap_Lattice_feature_constraint, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_boundary_constraint", _wrap_Lattice_set_boundary_constraint, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_feature_constraint", _wrap_Lattice_set_feature_constraint, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_result", _wrap_Lattice_set_result, METH_VARARGS, NULL},
-	 { (char *)"Lattice_what", (PyCFunction)_wrap_Lattice_what, METH_O, NULL},
+	 { (char *)"Lattice_what", _wrap_Lattice_what, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_what", _wrap_Lattice_set_what, METH_VARARGS, NULL},
-	 { (char *)"delete_Lattice", (PyCFunction)_wrap_delete_Lattice, METH_O, NULL},
-	 { (char *)"new_Lattice", (PyCFunction)_wrap_new_Lattice, METH_NOARGS, NULL},
+	 { (char *)"delete_Lattice", _wrap_delete_Lattice, METH_VARARGS, NULL},
+	 { (char *)"new_Lattice", _wrap_new_Lattice, METH_VARARGS, NULL},
 	 { (char *)"Lattice_set_sentence", _wrap_Lattice_set_sentence, METH_VARARGS, NULL},
 	 { (char *)"Lattice_swigregister", Lattice_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Lattice_swiginit", Lattice_swiginit, METH_VARARGS, NULL},
-	 { (char *)"Model_dictionary_info", (PyCFunction)_wrap_Model_dictionary_info, METH_O, NULL},
+	 { (char *)"Model_dictionary_info", _wrap_Model_dictionary_info, METH_VARARGS, NULL},
 	 { (char *)"Model_transition_cost", _wrap_Model_transition_cost, METH_VARARGS, NULL},
 	 { (char *)"Model_lookup", _wrap_Model_lookup, METH_VARARGS, NULL},
-	 { (char *)"Model_createTagger", (PyCFunction)_wrap_Model_createTagger, METH_O, NULL},
-	 { (char *)"Model_createLattice", (PyCFunction)_wrap_Model_createLattice, METH_O, NULL},
+	 { (char *)"Model_createTagger", _wrap_Model_createTagger, METH_VARARGS, NULL},
+	 { (char *)"Model_createLattice", _wrap_Model_createLattice, METH_VARARGS, NULL},
 	 { (char *)"Model_swap", _wrap_Model_swap, METH_VARARGS, NULL},
-	 { (char *)"Model_version", (PyCFunction)_wrap_Model_version, METH_NOARGS, NULL},
-	 { (char *)"delete_Model", (PyCFunction)_wrap_delete_Model, METH_O, NULL},
+	 { (char *)"Model_version", _wrap_Model_version, METH_VARARGS, NULL},
+	 { (char *)"delete_Model", _wrap_delete_Model, METH_VARARGS, NULL},
 	 { (char *)"new_Model", _wrap_new_Model, METH_VARARGS, NULL},
 	 { (char *)"Model_swigregister", Model_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Model_swiginit", Model_swiginit, METH_VARARGS, NULL},
 	 { (char *)"Tagger_parse", _wrap_Tagger_parse, METH_VARARGS, NULL},
 	 { (char *)"Tagger_parseToNode", _wrap_Tagger_parseToNode, METH_VARARGS, NULL},
 	 { (char *)"Tagger_parseNBest", _wrap_Tagger_parseNBest, METH_VARARGS, NULL},
 	 { (char *)"Tagger_parseNBestInit", _wrap_Tagger_parseNBestInit, METH_VARARGS, NULL},
-	 { (char *)"Tagger_nextNode", (PyCFunction)_wrap_Tagger_nextNode, METH_O, NULL},
-	 { (char *)"Tagger_next", (PyCFunction)_wrap_Tagger_next, METH_O, NULL},
+	 { (char *)"Tagger_nextNode", _wrap_Tagger_nextNode, METH_VARARGS, NULL},
+	 { (char *)"Tagger_next", _wrap_Tagger_next, METH_VARARGS, NULL},
 	 { (char *)"Tagger_formatNode", _wrap_Tagger_formatNode, METH_VARARGS, NULL},
 	 { (char *)"Tagger_set_request_type", _wrap_Tagger_set_request_type, METH_VARARGS, NULL},
-	 { (char *)"Tagger_request_type", (PyCFunction)_wrap_Tagger_request_type, METH_O, NULL},
-	 { (char *)"Tagger_partial", (PyCFunction)_wrap_Tagger_partial, METH_O, NULL},
+	 { (char *)"Tagger_request_type", _wrap_Tagger_request_type, METH_VARARGS, NULL},
+	 { (char *)"Tagger_partial", _wrap_Tagger_partial, METH_VARARGS, NULL},
 	 { (char *)"Tagger_set_partial", _wrap_Tagger_set_partial, METH_VARARGS, NULL},
-	 { (char *)"Tagger_lattice_level", (PyCFunction)_wrap_Tagger_lattice_level, METH_O, NULL},
+	 { (char *)"Tagger_lattice_level", _wrap_Tagger_lattice_level, METH_VARARGS, NULL},
 	 { (char *)"Tagger_set_lattice_level", _wrap_Tagger_set_lattice_level, METH_VARARGS, NULL},
-	 { (char *)"Tagger_all_morphs", (PyCFunction)_wrap_Tagger_all_morphs, METH_O, NULL},
+	 { (char *)"Tagger_all_morphs", _wrap_Tagger_all_morphs, METH_VARARGS, NULL},
 	 { (char *)"Tagger_set_all_morphs", _wrap_Tagger_set_all_morphs, METH_VARARGS, NULL},
 	 { (char *)"Tagger_set_theta", _wrap_Tagger_set_theta, METH_VARARGS, NULL},
-	 { (char *)"Tagger_theta", (PyCFunction)_wrap_Tagger_theta, METH_O, NULL},
-	 { (char *)"Tagger_dictionary_info", (PyCFunction)_wrap_Tagger_dictionary_info, METH_O, NULL},
-	 { (char *)"Tagger_what", (PyCFunction)_wrap_Tagger_what, METH_O, NULL},
-	 { (char *)"delete_Tagger", (PyCFunction)_wrap_delete_Tagger, METH_O, NULL},
-	 { (char *)"Tagger_version", (PyCFunction)_wrap_Tagger_version, METH_NOARGS, NULL},
+	 { (char *)"Tagger_theta", _wrap_Tagger_theta, METH_VARARGS, NULL},
+	 { (char *)"Tagger_dictionary_info", _wrap_Tagger_dictionary_info, METH_VARARGS, NULL},
+	 { (char *)"Tagger_what", _wrap_Tagger_what, METH_VARARGS, NULL},
+	 { (char *)"delete_Tagger", _wrap_delete_Tagger, METH_VARARGS, NULL},
+	 { (char *)"Tagger_version", _wrap_Tagger_version, METH_VARARGS, NULL},
 	 { (char *)"new_Tagger", _wrap_new_Tagger, METH_VARARGS, NULL},
 	 { (char *)"Tagger_parseToString", _wrap_Tagger_parseToString, METH_VARARGS, NULL},
 	 { (char *)"Tagger_swigregister", Tagger_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Tagger_swiginit", Tagger_swiginit, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
