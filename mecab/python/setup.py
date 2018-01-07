@@ -1,72 +1,33 @@
 #!/usr/bin/env python
-
-import distutils.sysconfig
-from setuptools import setup, Extension
+from distutils.core import setup, Extension, os
+import string
 import sys
 
-if sys.maxsize > 2**32:
-    setup(
-        name="mecab-python-windows",
-        version="0.996.0",
-        py_modules=["MeCab"],
-        ext_modules=[
-            Extension(
-                "_MeCab",
-                ["MeCab_wrap.cxx",],
-                include_dirs=["C:\Program Files\MeCab\sdk"],
-                library_dirs=["C:\Program Files\MeCab\sdk"],
-                libraries=["libmecab"]
-            )
-        ],
-            data_files=[(distutils.sysconfig.get_python_lib(), ['libmecab.dll'])],
-        author='Yukino Ikegami',
-            author_email='yknikgm@gmail.com',
-        platforms=['Windows'],
-        classifiers=[
-            'Development Status :: 3 - Alpha',
-            'Operating System :: Microsoft',
-            'Programming Language :: Python :: 2.7',
-            'Programming Language :: Python :: 3.6',
-            'Topic :: Text Processing'
-        ],
-        description='Python wrapper for MeCab on Windows: Morphological Analysis engine',
-        long_description='''This is a python wrapper for MeCab. It works on Windows.
+if sys.version > '3':
 
-    License
-    ---------
-    MeCab is copyrighted free software by Taku Kudo <taku@chasen.org> and Nippon Telegraph and Telephone Corporation, and is released under any of the GPL (see the file GPL), the LGPL (see the file LGPL), or the BSD License (see the file BSD).
-    '''
-    )
+    def cmd1(strings):
+        return os.popen(strings).readlines()[0][:-1]
+
+    def cmd2(strings):
+        return cmd1(strings).split()
 else:
-    setup(
-        name="mecab-python-windows",
-        version="0.996.0",
-        py_modules=["MeCab"],
-        ext_modules=[
-            Extension(
-                "_MeCab",
-                ["MeCab_wrap.cxx",],
-                include_dirs=["C:\Program Files (x86)\MeCab\sdk"],
-                library_dirs=["C:\Program Files (x86)\MeCab\sdk"],
-                libraries=["libmecab"]
-            )
-        ],
-            data_files=[(distutils.sysconfig.get_python_lib(), ['C:\Program Files (x86)\MeCab\\bin\libmecab.dll'])],
-        author='Yukino Ikegami',
-            author_email='yknikgm@gmail.com',
-        platforms=['Windows'],
-        classifiers=[
-            'Development Status :: 3 - Alpha',
-            'Operating System :: Microsoft',
-            'Programming Language :: Python :: 2.7',
-            'Programming Language :: Python :: 3.6',
-            'Topic :: Text Processing'
-        ],
-        description='Python wrapper for MeCab on Windows: Morphological Analysis engine',
-        long_description='''This is a python wrapper for MeCab. It works on Windows.
 
-    License
-    ---------
-    MeCab is copyrighted free software by Taku Kudo <taku@chasen.org> and Nippon Telegraph and Telephone Corporation, and is released under any of the GPL (see the file GPL), the LGPL (see the file LGPL), or the BSD License (see the file BSD).
-    '''
-    )
+    def cmd1(strings):
+        return os.popen(strings).readlines()[0][:-1]
+
+    def cmd2(strings):
+        return string.split(cmd1(strings))
+
+
+setup(
+    name="mecab-python",
+    version=cmd1("mecab-config --version"),
+    py_modules=["MeCab"],
+    ext_modules=[
+        Extension(
+            "_MeCab",
+            ["MeCab_wrap.cxx"],
+            include_dirs=cmd2("mecab-config --inc-dir"),
+            library_dirs=cmd2("mecab-config --libs-only-L"),
+            libraries=cmd2("mecab-config --libs-only-l"))
+    ])
