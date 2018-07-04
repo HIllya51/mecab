@@ -4,3 +4,8 @@ mecab/installer/*
 *.lib
 *.exp
 *.dll
+*.pyc
+__pycache__
+build
+dist
+mecab_python_windows.egg-info/
