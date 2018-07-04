@@ -1,0 +1,6 @@
+mecab/installer/*
+*.obj
+*.exe
+*.lib
+*.exp
+*.dll
