@@ -14,7 +14,7 @@ if sys.maxsize > 2**32:
             libraries=["libmecab"]
         )
     ]
-    data_files = [(distutils.sysconfig.get_python_lib(), ['C:\Program Files\MeCab\\bin\libmecab.dll'])]
+    data_files = [('lib\\site-packages\\',["C:\Program Files\MeCab\\bin\libmecab.dll"])]
 else:
     ext_modules = [
         Extension(
@@ -25,11 +25,11 @@ else:
             libraries=["libmecab"]
         )
     ]
-    data_files = [(distutils.sysconfig.get_python_lib(), ['C:\Program Files (x86)\MeCab\\bin\libmecab.dll'])]
+    data_files = [('lib\\site-packages\\',["C:\Program Files (x86)\MeCab\\bin\libmecab.dll"])]
 
 setup(
     name="mecab-python-windows",
-    version="0.996.0",
+    version="0.996.1",
     py_modules=["MeCab"],
     ext_modules=ext_modules,
     data_files=data_files,
@@ -41,6 +41,7 @@ setup(
         'Operating System :: Microsoft',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Text Processing'
     ],
     description='Python wrapper for MeCab on Windows: Morphological Analysis engine',
