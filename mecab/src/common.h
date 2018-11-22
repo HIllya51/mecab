@@ -27,6 +27,7 @@
 #if defined(_MSC_VER) || defined(__CYGWIN__)
 #define NOMINMAX
 #define snprintf _snprintf
+#include <iterator>
 #endif
 
 #define COPYRIGHT                                                              \
@@ -93,6 +94,7 @@
 #else
 #define WPATH_FORCE(path) (path)
 #define WPATH(path) (path)
+#endif
 
 namespace MeCab {
 class die {
