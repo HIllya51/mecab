@@ -22,8 +22,8 @@ try:
     print("EOS")
 
     lattice = MeCab.Lattice()
-    t.parse(lattice)
     lattice.set_sentence(sentence)
+    t.parse(lattice)
     len = lattice.size()
     for i in range(len + 1):
         b = lattice.begin_nodes(i)

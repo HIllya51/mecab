@@ -1,28 +1,42 @@
 #!/usr/bin/env python
-from distutils.core import setup, Extension, os
-import string
+import os
+import platform
+from setuptools import setup, Extension
 import sys
 
-if sys.version > '3':
 
-    def cmd1(strings):
-        return os.popen(strings).readlines()[0][:-1]
+def cmd1(strings):
+    return os.popen(strings).readlines()[0][:-1]
 
-    def cmd2(strings):
-        return cmd1(strings).split()
+
+def cmd2(strings):
+    return cmd1(strings).split()
+
+
+if platform.system() == 'Windows':
+    if sys.maxsize > 2**32:  # 64bit
+        ext_modules = [
+            Extension(
+                "_MeCab",
+                ["MeCab_wrap.cxx",],
+                include_dirs=["C:\Program Files\MeCab\sdk"],
+                library_dirs=["C:\Program Files\MeCab\sdk"],
+                libraries=["libmecab"]
+            )
+        ]
+        data_files = [('lib\\site-packages\\',["C:\Program Files\MeCab\\bin\libmecab.dll"])]
+    else:  # 32bit
+        ext_modules = [
+            Extension(
+                "_MeCab",
+                ["MeCab_wrap.cxx",],
+                include_dirs=["C:\Program Files (x86)\MeCab\sdk"],
+                library_dirs=["C:\Program Files (x86)\MeCab\sdk"],
+                libraries=["libmecab"]
+            )
+        ]
+        data_files = [('lib\\site-packages\\',["C:\Program Files (x86)\MeCab\\bin\libmecab.dll"])]
 else:
-
-    def cmd1(strings):
-        return os.popen(strings).readlines()[0][:-1]
-
-    def cmd2(strings):
-        return string.split(cmd1(strings))
-
-
-setup(
-    name="mecab-python",
-    version=cmd1("mecab-config --version"),
-    py_modules=["MeCab"],
     ext_modules=[
         Extension(
             "_MeCab",
@@ -30,4 +44,36 @@ setup(
             include_dirs=cmd2("mecab-config --inc-dir"),
             library_dirs=cmd2("mecab-config --libs-only-L"),
             libraries=cmd2("mecab-config --libs-only-l"))
-    ])
+    ]
+    data_files = None
+
+setup(
+    name="mecab-python-windows",
+    version="0.996.2",
+    py_modules=["MeCab"],
+    ext_modules=ext_modules,
+    data_files=data_files,
+    author='Yukino Ikegami',
+    author_email='yknikgm@gmail.com',
+    url='https://github.com/ikegami-yukino/mecab/tree/master/mecab/python',
+    license='BSD, GPL or LGPL',
+    platforms=['Windows'],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: GNU General Public License (GPL)',
+        'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
+        'Operating System :: Microsoft',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Topic :: Text Processing'
+    ],
+    description='Python wrapper for MeCab on Windows: Morphological Analysis engine',
+    long_description='''This is a python wrapper for MeCab. It works on Windows.
+
+    License
+    ---------
+    MeCab is copyrighted free software by Taku Kudo <taku@chasen.org> and Nippon Telegraph and Telephone Corporation, and is released under any of the GPL (see the file GPL), the LGPL (see the file LGPL), or the BSD License (see the file BSD).
+    '''
+)
