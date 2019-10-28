@@ -70,7 +70,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Topic :: Text Processing'
     ],
-    description='MeCab binding for many OS (Windows, macOS, and Linux)',
-    long_description=open('README.md', encoding='utf8').read(),
-    long_description_content_type='text/markdown'
+    description='MeCab binding for many OSs (Windows, macOS, and Linux)',
+    long_description=open('README.rst', encoding='utf8').read(),
+    long_description_content_type='text/x-rst'
 )
