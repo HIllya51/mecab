@@ -6,7 +6,7 @@ import sys
 
 
 def cmd1(strings):
-    return os.popen(strings).readlines()[0][:-1]
+    return os.popen(strings).readlines()[0].rstrip()
 
 
 def cmd2(strings):
@@ -18,22 +18,22 @@ if platform.system() == 'Windows':
         ext_modules = [
             Extension(
                 "_MeCab",
-                ["MeCab_wrap.cxx",],
-                library_dirs=["C:\Program Files\MeCab\sdk"],
+                ["MeCab_wrap.cxx"],
+                library_dirs=[r"C:\Program Files\MeCab\sdk"],
                 libraries=["libmecab"]
             )
         ]
-        data_files = [('lib\\site-packages\\',["C:\Program Files\MeCab\\bin\libmecab.dll"])]
+        data_files = [(r'lib\site-packages', [r"C:\Program Files\MeCab\\bin\libmecab.dll"])]
     else:  # 32bit
         ext_modules = [
             Extension(
                 "_MeCab",
                 ["MeCab_wrap.cxx",],
-                library_dirs=["C:\Program Files (x86)\MeCab\sdk"],
+                library_dirs=[r"C:\Program Files (x86)\MeCab\sdk"],
                 libraries=["libmecab"]
             )
         ]
-        data_files = [('lib\\site-packages\\',["C:\Program Files (x86)\MeCab\\bin\libmecab.dll"])]
+        data_files = [(r'lib\site-packages', [r"C:\Program Files (x86)\MeCab\bin\libmecab.dll"])]
 else:
     ext_modules=[
         Extension(
