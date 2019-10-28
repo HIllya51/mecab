@@ -19,7 +19,6 @@ if platform.system() == 'Windows':
             Extension(
                 "_MeCab",
                 ["MeCab_wrap.cxx",],
-                include_dirs=["C:\Program Files\MeCab\sdk"],
                 library_dirs=["C:\Program Files\MeCab\sdk"],
                 libraries=["libmecab"]
             )
@@ -30,7 +29,6 @@ if platform.system() == 'Windows':
             Extension(
                 "_MeCab",
                 ["MeCab_wrap.cxx",],
-                include_dirs=["C:\Program Files (x86)\MeCab\sdk"],
                 library_dirs=["C:\Program Files (x86)\MeCab\sdk"],
                 libraries=["libmecab"]
             )
