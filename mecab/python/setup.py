@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from codecs import open
 import os
 import platform
 from setuptools import setup, Extension
@@ -69,11 +70,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Topic :: Text Processing'
     ],
-    description='Python wrapper for MeCab on Windows: Morphological Analysis engine',
-    long_description='''This is a python wrapper for MeCab. It works on Windows.
-
-    License
-    ---------
-    MeCab is copyrighted free software by Taku Kudo <taku@chasen.org> and Nippon Telegraph and Telephone Corporation, and is released under any of the GPL (see the file GPL), the LGPL (see the file LGPL), or the BSD License (see the file BSD).
-    '''
+    description='MeCab binding for many OS (Windows, macOS, and Linux)',
+    long_description=open('README.md', encoding='utf8').read(),
+    long_description_content_type='text/markdown'
 )
