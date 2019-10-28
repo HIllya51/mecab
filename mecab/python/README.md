@@ -3,13 +3,13 @@
 ## Instlation
 
 ```sh
-$ pip install mecab-python-windows
+$ pip install mecab
 ```
 
 or
 
 ```sh
-$ python -m pip install mecab-python-windows
+$ python -m pip install mecab
 ```
 
 ## Usage

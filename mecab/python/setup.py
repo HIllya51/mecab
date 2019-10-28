@@ -47,8 +47,8 @@ else:
     data_files = None
 
 setup(
-    name="mecab-python-windows",
-    version="0.996.2",
+    name="mecab",
+    version="0.996",
     py_modules=["MeCab"],
     ext_modules=ext_modules,
     data_files=data_files,
