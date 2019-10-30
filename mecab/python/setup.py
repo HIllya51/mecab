@@ -48,7 +48,7 @@ else:
 
 setup(
     name="mecab",
-    version="0.996",
+    version="0.996.1",
     py_modules=["MeCab"],
     ext_modules=ext_modules,
     data_files=data_files,
