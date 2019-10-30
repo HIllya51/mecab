@@ -15,7 +15,7 @@ def cmd2(strings):
 
 
 if platform.system() == 'Windows':
-    if sys.maxsize > 2**32:  # 64bit
+    if sys.maxsize > 2**32 and os.path.exists(r"C:\Program Files\MeCab"):  # 64bit
         ext_modules = [
             Extension(
                 "_MeCab",
@@ -24,7 +24,7 @@ if platform.system() == 'Windows':
                 libraries=["libmecab"]
             )
         ]
-        data_files = [(r'lib\site-packages', [r"C:\Program Files\MeCab\\bin\libmecab.dll"])]
+        data_files = [(r'lib\site-packages', [r"C:\Program Files\MeCab\bin\libmecab.dll"])]
     else:  # 32bit
         ext_modules = [
             Extension(
