@@ -3,25 +3,32 @@ Contributions are welcome!
 
 ## Types of Contributions
 ### Report Bugs
-Report bugs at yknikgm@gmail.com
+Report bugs at https://github.com/ikegami-yukino/mecab/issues
 
 If you are reporting a bug, please include:
 
 - Your operating system name and version.
 - Your Python verison and 32-bit/64-bit
 - Using Anaconda/Miniconda: yes or no
+- Your MeCab is 32-bit/64-bit
 - Error log
 - Any details about your local setup that might be helpful in troubleshooting.
 - Detailed steps to reproduce the bug.
+
+### Fix Bugs
+Look through the GitHub issues for bugs. Anything tagged with "bug" and "help wanted" is open to whoever wants to implement it.
+
+### Implement Features
+Look through the GitHub issues for features. Anything tagged with "enhancement" and "help wanted" is open to whoever wants to implement it.
 
 ### Typo
 If you find typo, I would appreciate if you could submit pull request.
 
 ### Revise Document
-If you find mistake/missing in `README.rst`, I would appreciate if you could submit pull request.
+If you find mistake/missing in `README.rst` or docstrings, I would appreciate if you could submit pull request.
 
 ### Submit Feedback
-The best way to send feedback is to report an issue at yknikgm@gmail.com
+The best way to send feedback is to file an issue at https://github.com/ikegami-yukino/mecab/issues
 
 If you are proposing a new feature:
 
@@ -64,6 +71,7 @@ $ git push origin name-of-your-bugfix-or-feature
 ## Pull Request Guidelines
 Before you submit a pull request, check that it meets these guidelines:
 
+- The pull request should include tests.
 - If the pull request adds functionality, the docs should be updated. Put your new functionality into a function with a docstring, and add example about the feature to the `README.rst`.
 - The pull request should work for Python 2.7, 3.6, 3.7 and 3.8.
 - The title of pull request should be written in English.
