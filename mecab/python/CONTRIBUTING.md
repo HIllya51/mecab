@@ -14,9 +14,6 @@ If you are reporting a bug, please include:
 - Any details about your local setup that might be helpful in troubleshooting.
 - Detailed steps to reproduce the bug.
 
-### Fix Bugs
-Look through the GitHub issues for bugs. Anything tagged with "bug" and "help wanted" is open to whoever wants to implement it.
-
 ### Typo
 If you find typo, I would appreciate if you could submit pull request.
 
