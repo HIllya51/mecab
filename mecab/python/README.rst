@@ -15,6 +15,10 @@ $ python -m pip install mecab
 
 NOTE: If you use Python 64-bit on Windows, `MeCab 64-bit binary <https://github.com/ikegami-yukino/mecab/releases>`_ is required.
 
+If you encountered the error such as **MeCab_wrap.cxx:178:11: fatal error: 'Python.h' file not found**, please try the following command:
+
+$ `CPLUS_INCLUDE_PATH=`python-config --prefix`/Headers:$CPLUS_INCLUDE_PATH pip install mecab
+
 Usage
 ============
 
