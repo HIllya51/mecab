@@ -16,7 +16,7 @@ ruby:
 	mv -f $(PREFIX)_wrap.cxx ../ruby/$(PREFIX)_wrap.cpp
 	
 python:	
-	$(SWIG) -python -shadow -c++ $(PREFIX).i
+	$(SWIG) -python -fastdispatch -shadow -c++ $(PREFIX).i
 	mv -f $(PREFIX)_wrap.cxx ../python
 	mv -f $(PREFIX).py ../python
 	
