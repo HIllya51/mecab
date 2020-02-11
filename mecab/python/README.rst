@@ -1,13 +1,19 @@
-Unofficial MeCab binding module for many OSs (Windows, macOS, and Linux)
+Unofficial MeCab binding Python module for many OSs (Windows, macOS, and Linux)
 
-Instlation
-===========
+Official Japanese document about MeCab is available: https://taku910.github.io/mecab/
+
+Japanese document about this Python wrapper is available: https://qiita.com/yukinoi/items/990b6933d9f21ba0fb43
+
+Installation
+=============
 
 $ pip install mecab
 
 or
 
 $ python -m pip install mecab
+
+NOTE: If you use Python 64-bit on Windows, `MeCab 64-bit binary <https://github.com/ikegami-yukino/mecab/releases>`_ is required.
 
 Usage
 ============
@@ -51,3 +57,16 @@ License
 MeCab is copyrighted free software by Taku Kudo <taku@chasen.org> and Nippon Telegraph and Telephone Corporation, and is released under any of the GPL (see the file GPL), the LGPL (see the file LGPL), or the BSD License (see the file BSD).
 
 Also, this Python binding is under any of the GPL, the LGPL, or the BSD License.
+
+Changes
+============
+
+0.996.2 (2020/02/11)
+----------------------------
+
+- Bugfix: memory leak for MeCab.Tagger().parseToNode()
+
+Contributing
+===============
+
+See https://github.com/ikegami-yukino/mecab/blob/master/mecab/python/CONTRIBUTING.md
