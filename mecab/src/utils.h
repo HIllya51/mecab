@@ -19,7 +19,7 @@
 #endif
 
 #ifdef HAVE_STDINT_H
-#include <cstdint.h>
+#include <cstdint>
 #else  // HAVE_STDINT_H
 #if defined(_WIN32) && !defined(__CYGWIN__)
 #if defined(_MSC_VER) && (_MSC_VER <= 1500)
