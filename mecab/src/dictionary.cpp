@@ -5,6 +5,7 @@
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
 #include <fstream>
 #include <climits>
+#include <functional>
 #include "connector.h"
 #include "context_id.h"
 #include "char_property.h"
@@ -18,7 +19,7 @@
 #include "scoped_ptr.h"
 #include "utils.h"
 #include "writer.h"
-
+#define DIC_VERSION 102
 namespace MeCab {
 namespace {
 

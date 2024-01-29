@@ -86,6 +86,7 @@
 #define WPATH_FORCE(path) (MeCab::Utf8ToWide(path).c_str())
 #define WPATH(path) (path)
 #else
+#define WPATH_FORCE(path) (MeCab::Utf8ToWide(path).c_str())
 #define WPATH(path) WPATH_FORCE(path)
 #endif
 #else
