@@ -23,42 +23,38 @@ if platform.system() == 'Windows':
     if sys.maxsize > 2**32:  # 64bit
         if os.path.exists(r"C:\Program Files\MeCab"):
             ext_modules = [
-                Extension(
-                    "_MeCab",
-                    ["MeCab_wrap.cxx"],
-                    library_dirs=[r"C:\Program Files\MeCab\sdk"],
-                    libraries=["libmecab"]
-                )
+                Extension("_MeCab", ["MeCab_wrap.cxx"],
+                          library_dirs=[r"C:\Program Files\MeCab\sdk"],
+                          libraries=["libmecab"])
             ]
-            data_files = [(r'lib\site-packages', [r"C:\Program Files\MeCab\bin\libmecab.dll"])]
+            data_files = [(r'lib\site-packages',
+                           [r"C:\Program Files\MeCab\bin\libmecab.dll"])]
         else:
             raise RuntimeError(PY64WIN_ERROR)
     elif os.path.exists(r"C:\Program Files (x86)\MeCab"):  # 32bit
         ext_modules = [
-            Extension(
-                "_MeCab",
-                ["MeCab_wrap.cxx",],
-                library_dirs=[r"C:\Program Files (x86)\MeCab\sdk"],
-                libraries=["libmecab"]
-            )
+            Extension("_MeCab", [
+                "MeCab_wrap.cxx",
+            ],
+                      library_dirs=[r"C:\Program Files (x86)\MeCab\sdk"],
+                      libraries=["libmecab"])
         ]
-        data_files = [(r'lib\site-packages', [r"C:\Program Files (x86)\MeCab\bin\libmecab.dll"])]
+        data_files = [(r'lib\site-packages',
+                       [r"C:\Program Files (x86)\MeCab\bin\libmecab.dll"])]
     else:
         raise RuntimeError(PY32WIN_ERROR)
 else:
-    ext_modules=[
-        Extension(
-            "_MeCab",
-            ["MeCab_wrap.cxx"],
-            include_dirs=cmd2("mecab-config --inc-dir"),
-            library_dirs=cmd2("mecab-config --libs-only-L"),
-            libraries=cmd2("mecab-config --libs-only-l"))
+    ext_modules = [
+        Extension("_MeCab", ["MeCab_wrap.cxx"],
+                  include_dirs=cmd2("mecab-config --inc-dir"),
+                  library_dirs=cmd2("mecab-config --libs-only-L"),
+                  libraries=cmd2("mecab-config --libs-only-l"))
     ]
     data_files = None
 
 setup(
     name="mecab",
-    version="0.996.2",
+    version="0.996.5",
     py_modules=["MeCab"],
     ext_modules=ext_modules,
     data_files=data_files,
@@ -78,9 +74,13 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'Topic :: Text Processing'
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Topic :: Text Processing',
     ],
     description='MeCab binding for many OSs (Windows, macOS, and Linux)',
     long_description=open('README.rst', encoding='utf8').read(),
-    long_description_content_type='text/x-rst'
-)
+    long_description_content_type='text/x-rst')

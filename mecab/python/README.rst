@@ -65,6 +65,12 @@ Also, this Python binding is under any of the GPL, the LGPL, or the BSD License.
 Changes
 ============
 
+0.996.5 (2024/10/15)
+----------------------------
+
+- Update MeCab_wrap.cxx by SWIG 4.2.1 for support latest macOS
+
+
 0.996.2 (2020/02/11)
 ----------------------------
 
