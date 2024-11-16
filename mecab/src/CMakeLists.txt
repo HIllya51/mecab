@@ -3,7 +3,6 @@ project(mecab)
 
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
-include("${CMAKE_CURRENT_SOURCE_DIR}/VC-LTL helper for cmake.cmake")
 add_compile_options(/MT)
 add_definitions(
     -DDIC_VERSION=102
