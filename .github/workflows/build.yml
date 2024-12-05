@@ -1,4 +1,4 @@
-name: luna_extra_build
+name: build
 
 on:
   workflow_dispatch:
