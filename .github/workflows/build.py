@@ -10,7 +10,7 @@ vcltlFile = "https://github.com/Chuyu-Team/VC-LTL5/releases/download/v5.0.9/VC-L
 vcltlFileName = "VC-LTL-5.0.9-Binary.7z"
 
 
-rootDir = os.path.dirname(__file__)
+rootDir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 
 def installVCLTL():
