@@ -18,7 +18,15 @@
 #include "scoped_ptr.h"
 #include "utils.h"
 #include "writer.h"
-
+namespace std{
+  template<class Argv1, class Argv2, class Result>
+	struct binary_function
+	{
+		typedef Argv1 first_argument_type;
+		typedef Argv2 second_argument_type;
+		typedef Result result_type;
+	};
+}
 namespace MeCab {
 namespace {
 
